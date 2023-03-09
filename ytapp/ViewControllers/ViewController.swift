@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet var tableView: UITableView!
     
-    let model = Model()
+    var model = Model()
     ///we need to create a variable that will hold the videos array, we start with an empty one
     var videos = [Video]()
     
@@ -51,11 +51,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         ///here the tableView will display a cell for each row from the above method
         ///we need to create a cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath) as! VideoTableViewCell
         
         ///after we create our cell we need to configure it later on
-        let title = self.videos[indexPath.row].title
-        cell.textLabel?.text = title
+        let video = self.videos[indexPath.row]
+        
+        cell.setCell(video)
         
         
         ///and return the cell
