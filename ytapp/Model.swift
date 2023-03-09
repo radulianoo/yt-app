@@ -24,7 +24,20 @@ class Model {
             ///check if there were any errors
             if error != nil || data ==  nil { return }
             
-            ///parsing the data into video objects
+            do {
+                ///parsing the data into video objects
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+                //due to the try we need to wrap this in a do block
+                let response = try decoder.decode(Response.self, from: data!)
+                
+                dump(response)
+            }
+            catch {
+                
+            }
+            
         }
         
         /// Start or Kick off the task
