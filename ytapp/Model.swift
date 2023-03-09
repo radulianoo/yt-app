@@ -6,8 +6,18 @@
 //
 
 import Foundation
+
+///for the delegate property we need to declare the protocol, our function will have a parameter that will take an array of Videos (as we have in our decoded data)
+protocol ModelDelegate {
+    func videosFetched(_ videos: [Video])
+}
+
+
 ///in the model class we will make the api call
 class Model {
+    
+    ///in order to fetch the data and use the delegation pattern (and set the viewController as the delegate) we need to create a delegate property
+    var delegate: ModelDelegate?
     
     func getVideos() {
         
@@ -32,7 +42,17 @@ class Model {
                 //due to the try we need to wrap this in a do block
                 let response = try decoder.decode(Response.self, from: data!)
                 
-                dump(response)
+                ///because response.items can be nil we need to check it
+                if response.items != nil  {
+                    
+                    DispatchQueue.main.async {
+                        ///called the videosFetched method of the delegate
+                        self.delegate?.videosFetched(response.items!)
+                    }
+                    
+                }
+                
+                //dump(response)
             }
             catch {
                 
