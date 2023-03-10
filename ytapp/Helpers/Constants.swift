@@ -15,10 +15,11 @@ struct Constants {
     //not to the istance not to the instance created by the Constants blueprint
     
     static var API_KEY = "AIzaSyBnPlDb6LnncrdGv3OhuHaTwrMTOZP_LtQ"
-    static var PLAYLIST_ID = "PLMRqhzcHGw1aLoz4pM_Mg2TewmJcMg9ua"
+    static var PLAYLIST_ID = "UU2D6eRvCMtcF5OGHf1-trw"
     static var API_URL = "https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=\(Constants.PLAYLIST_ID)&key=\(Constants.API_KEY)"
     
     //add the resurse identifier of the cell to the constants file
     static var VIDEOCELL_ID = "VideoCell"
     
+    static var YT_EMBED_URL = "https://www.youtube.com/embed/"
 }

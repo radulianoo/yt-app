@@ -13,6 +13,7 @@
 		EC42260329B9FD0200D0F06B /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42260229B9FD0200D0F06B /* Response.swift */; };
 		EC42260529BA5A9E00D0F06B /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42260429BA5A9E00D0F06B /* VideoTableViewCell.swift */; };
 		EC42260C29BA63D400D0F06B /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42260B29BA63D400D0F06B /* CacheManager.swift */; };
+		EC42260E29BB3A9900D0F06B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC42260D29BB3A9900D0F06B /* DetailViewController.swift */; };
 		EC52331B29B7C2DE005ED6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52331A29B7C2DE005ED6FF /* AppDelegate.swift */; };
 		EC52331D29B7C2DE005ED6FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52331C29B7C2DE005ED6FF /* SceneDelegate.swift */; };
 		EC52331F29B7C2DE005ED6FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52331E29B7C2DE005ED6FF /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 		EC42260229B9FD0200D0F06B /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		EC42260429BA5A9E00D0F06B /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		EC42260B29BA63D400D0F06B /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		EC42260D29BB3A9900D0F06B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		EC52331729B7C2DE005ED6FF /* ytapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ytapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52331A29B7C2DE005ED6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52331C29B7C2DE005ED6FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				EC52331E29B7C2DE005ED6FF /* ViewController.swift */,
+				EC42260D29BB3A9900D0F06B /* DetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				EC42260129B9072800D0F06B /* Model.swift in Sources */,
 				EC4225FD29B9021500D0F06B /* Constants.swift in Sources */,
 				EC42260529BA5A9E00D0F06B /* VideoTableViewCell.swift in Sources */,
+				EC42260E29BB3A9900D0F06B /* DetailViewController.swift in Sources */,
 				EC4225FF29B9069D00D0F06B /* Video.swift in Sources */,
 				EC42260329B9FD0200D0F06B /* Response.swift in Sources */,
 			);
